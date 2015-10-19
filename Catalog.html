@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Средства для ухода</title>
@@ -35,7 +35,7 @@
       </div>
     </header>
     <div class="container">
-      <h1 class="content-column-title"></h1>
+      <h1 class="content-title">Текст</h1>
       <div class="breadcrumbs">
         <ul>
           <li>
@@ -44,70 +44,48 @@
           <li>
             <a href="#">Магазин</a>
           </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
+          <li class="active">Средства для ухода</li>
         </ul>
       </div>
-      <div class="catalog-item-content">
-        <div class="content-column-left">
-          <section class="content-column-left-manufacturer">
+      <div class="catalog">
+        <aside class="catalog-filter">
+          <form action="" method="">
             <h2 class="content-column-title2">Производители</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="manufacturer" id="BaxterOfCalifornia"  checked>
-                <label for="BaxterOfCalifornia">Baxter of California</label>
-              </li>
-              <li>
-                <input type="checkbox" name="manufacturer" id="MrNatty">
-                <label for="MrNatty">Mr Natty</label>
-              </li>
-              <li>
-                <input type="checkbox" name="manufacturer" id="Suavecito" checked>
-                <label for="Suavecito">Suavecito</label>
-              </li>
-              <li>
-                <input type="checkbox" name="manufacturer" id="MalinGoetz">
-                <label for="MalinGoetz">Malin+Goetz</label>
-              </li>
-              <li>
-                <input type="checkbox" name="manufacturer" id="Murray">
-                <label for="Murray">Murray's</label>
-              </li>
-              <li>
-                <input type="checkbox" name="manufacturer" id="AmericanCrew" checked>
-                <label for="AmericanCrew">American Crew</label>
-              </li>
-            </ul>
-          </section>
-          <section class="content-column-left-product">
+            <input type="checkbox" name="manufacturer" id="BaxterOfCalifornia"  checked>
+            <label for="BaxterOfCalifornia">Baxter of California</label>
+            <input type="checkbox" name="manufacturer" id="MrNatty">
+            <label for="MrNatty">Mr Natty</label>
+            <input type="checkbox" name="manufacturer" id="Suavecito" checked>
+            <label for="Suavecito">Suavecito</label>
+            <input type="checkbox" name="manufacturer" id="MalinGoetz">
+            <label for="MalinGoetz">Malin+Goetz</label>
+            <input type="checkbox" name="manufacturer" id="Murray">
+            <label for="Murray">Murray's</label>
+            <input type="checkbox" name="manufacturer" id="AmericanCrew" checked>
+            <label for="AmericanCrew">American Crew</label>
             <h2 class="content-column-title2">Группы товаров</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="product" id="ShavingStaff" checked>
-                <label for="ShavingStaff">Бритвенные принадлежности</label>
-              </li>
-              <li>
-                <input type="checkbox" name="product" id="CareProducts">
-                <label for="CareProducts">Средства для ухода</label>
-              </li>
-              <li>
-                <input type="checkbox" name="product" id="Accessories">
-                <label for="Accessories">Аксессуары</label>
-              </li>
-            </ul>
-            <a href="#" class="btn">Показать</a>
-          </section>
-        </div>
-        <div class="content-column-right">
-          <article class="products">
+            <input type="checkbox" name="product" id="ShavingStaff" checked>
+            <label for="ShavingStaff">Бритвенные принадлежности</label>
+            <input type="checkbox" name="product" id="CareProducts">
+            <label for="CareProducts">Средства для ухода</label>
+            <input type="checkbox" name="product" id="Accessories">
+            <label for="Accessories">Аксессуары</label>
+            <button type="submit" class="btn">Показать</button>
+          </form>
+        </aside>
+        <div class="catalog-content">
+          <article class="catalog-item">
             <img src="http://placehold.jpg" width="220" height="286" alt="">
-            <p>Набор для путешествий «Baxter of California»</p>
-            <div class="price-box">
-              <span class="price-box-left">2 900 руб.</span>
-              <a href="#" class="price-box-right">Купить</a>
+            <div class="catalog-item-description">
+              <h2 class="catalog-item-title">Набор для путешествий <span>«Baxter of California»</span></h2>
+              <div class="price-box">
+                <span class="price-box-left">2 900 руб.</span>
+                <a href="#" class="price-box-right">Купить</a>
+              </div>
             </div>
           </article>
+          
+          
           <article class="products">
             <img src="http://placehold.jpg" width="220" height="286" alt="">
             <p>Увлажняющий кондиционер «Baxter of California»</p>
@@ -149,6 +127,7 @@
             </div>
           </article>
         </div>
+        <!-- по аналогии с хлебными крошками ul>li>a pagination-->
         <div class="catalog-nav">
           <a href="#" class="catalog-nav-btn">1</a>
           <a href="#" class="catalog-nav-btn">2</a>
